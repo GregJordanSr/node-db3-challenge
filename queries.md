@@ -32,9 +32,11 @@
     - SELECT Distinct CategoryName, Unit as 'Count'
     FROM [Categories]
     join Products on Categories.CategoryID = Products.CategoryID
+    Limit 9
 
-### (Stretch) Display OrderID and a  column called ItemCount that shows the total number of products placed on the order. Shows 196 records. 
+### (Stretch) Display OrderID and a column called ItemCount that shows the total number of products placed on the order. Shows 196 records. 
 
     - SELECT Distinct (OrderID), Quantity as 'ItemCount'
     FROM [OrderDetails]
     join Products on OrderDetails.ProductID = Products.ProductID
+    Limit 196
